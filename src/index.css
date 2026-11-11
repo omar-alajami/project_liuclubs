@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@theme {
+
+  /* LIU blue */
+  --color-primary: #002a5c;
+  --color-primary-dark: #002147;
+  --color-primary-light: #073972;
+  --color-primary-soft: #e7f0fa;
+
+  /* LIU gold */
+  --color-accent: #ffb034;
+  --color-accent-dark: #fbb034;
+  --color-accent-light: #ffc107;
+  --color-accent-soft: #fff3d7;
+
+  /* General */
+  --color-ink: #061a33;
+  --color-muted: #64748b;
+
+  /* SoPH - green */
+  --color-soph: #15952a;
+  --color-soph-dark: #107020;
+  --color-soph-soft: #e3f7e7;
+
+  /* SoBU — gray */
+  --color-sobu: #8b8b8b;
+  --color-sobu-dark: #686868;
+  --color-sobu-soft: #ededed;
+
+  /* SoED — blue */
+  --color-soed: #1d81b7;
+  --color-soed-dark: #166189;
+  --color-soed-soft: #e3f0f7;
+
+  /* SoEN — orange */
+  --color-soen: #fd9721;
+  --color-soen-dark: #f89422;
+  --color-soen-soft: #fdecd8;
+
+  /* SoAS — purple */
+  --color-soas: #7f41a2;
+  --color-soas-dark: #5f317a;
+  --color-soas-soft: #efe5f5;
+
+  /* Fonts */
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+button:not(:disabled) {
+  @apply cursor-pointer;
+}
